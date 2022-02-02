@@ -1,8 +1,4 @@
-
-import sys
-sys.path.insert(0, '..')
-
-from seoworkflows_lib.data_cleaning.url_cleaning_helpers import *
+from data_cleaning.url_cleaning_helpers import *
 
 def get_url_path(url_list):
     df = url_list.to_frame('inputs')

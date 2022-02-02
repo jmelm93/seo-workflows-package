@@ -1,4 +1,4 @@
-"""Setup script for realpython-reader"""
+"""Setup script for seoworkflows Pypi package"""
 
 # Standard library imports
 import pathlib
@@ -14,22 +14,22 @@ README = (HERE / "README.md").read_text()
 
 # This call to setup() does all the work
 setup(
-    name="realpython-reader",
+    name="seoworkflows",
     version="1.0.0",
-    description="Read the latest Real Python tutorials",
+    description="Functions that help power seoworkflows.com",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/realpython/reader",
-    author="Real Python",
-    author_email="info@realpython.com",
+    author="Jason Melman",
+    author_email="jasonm@seoworkflows.com",
+    url="https://github.com/jmelm93/seo-workflows-package",
     license="MIT",
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
     ],
-    packages=["reader"],
+    packages=["seoworkflows"],
     include_package_data=True,
-    install_requires=["feedparser", "html2text"],
-    entry_points={"console_scripts": ["realpython=reader.__main__:main"]},
+    install_requires=["pandas", "yagmail", "pyyaml", "google-cloud-bigquery",  "google-api-python-client",  "xlsxwriter", "sklearn", ],
+    entry_points={"console_scripts": ["seoworkflows=seo_workflows.__main__:main"]},
 )

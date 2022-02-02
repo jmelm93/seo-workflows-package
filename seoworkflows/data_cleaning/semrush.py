@@ -1,8 +1,8 @@
 import sys
 sys.path.insert(0, '..')
 
-from seoworkflows_lib.data_cleaning.url_cleaning_helpers import *
-from seoworkflows_lib.data_cleaning.semrush_mods_helpers import *
+from data_cleaning.url_cleaning_helpers import *
+from data_cleaning.semrush_mods_helpers import *
 
 
 def semrush_analysis_cols(df):

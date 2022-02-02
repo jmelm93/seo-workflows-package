@@ -1,4 +1,4 @@
-__version__ = '0.0.1'
+__version__ = '1.0.0'
 
 import pandas as pd
 from dataclasses import dataclass, field
@@ -7,10 +7,6 @@ from typing import Dict, TypeVar, Optional
 # setup_logging()
 
 PandasDataFrame = TypeVar('pandas.core.frame.DataFrame')
-
-def send_email(subject_line, content):
-    from send_email.sendgrid import send_email
-    send_email(subject_line=subject_line, content=content)
 
 
 def send_gmail(email_from, email_list_to, email_password, subject, message, attachment="No Attachment"):
